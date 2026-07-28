@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="projects.css">
+    <title>Ethan August Davenport</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
+            <ul>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -22,10 +21,21 @@
         <section class="projects-container">
             <!-- Project cards will go here -->
             <div class="project-card">
-                <img src="images/project-placeholder.jpg" alt="Project 1">
-                <h2>Project One</h2>
-                <p>Description of project one goes here.</p>
-                <a href="#" class="btn">View More</a>
+                <img src="images/placeholder.jpg" alt="8-Bit processor">
+                <h2>GR8GG - A custom 8-bit processor</h2>
+                <p>While still in it's infancy, this project will hopefully end up as a fully functional 8-bit processor. The final goal is to make my own instruction set and (with a microcontroller for IO), have a functional computer, and possibly a small operating system.</p>
+                <p>This project is currently being developed with Verilog and a SiPEED Tang Nano 9k as an FPGA (my photo pictured above), this may eventually be changed if better hardware is required.<p>
+                <p>As of right now, this project is in its very beggining phases, as I am still actively learning Verilog, how to properly interface with an FPGA. The repository below will be updated as I progress<p>
+                <a href="https://github.com/GreggAug/GR8GG" class="btn">Repository</a>
+            </div>
+
+            <div class="project-card">
+                <img src="images/placeholder.jpg" alt="DROUGHT">
+                <h2>DROUGHT - A retro-inspired videogame</h2>
+                <p>While still in it's infancy, this project will hopefully end up as a fully functional 8-bit processor. The final goal is to make my own instruction set and (with a microcontroller for IO), have a functional computer, and possibly a small operating system.</p>
+                <p>This project is currently being developed with Verilog and a SiPEED Tang Nano 9k as an FPGA (my photo pictured above), this may eventually be changed if better hardware is required.<p>
+                <p>As of right now, this project is in its very beggining phases, as I am still actively learning Verilog, how to properly interface with an FPGA. The repository below will be updated as I progress<p>
+                <a href="https://github.com/GreggAug/GR8GG" class="btn">Repository</a>
             </div>
 
             <!-- Repeat similar for other projects -->
@@ -33,7 +43,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
+        <p>&copy; 2026 Ethan August Davenport</p>
     </footer>
 </body>
 </html>
