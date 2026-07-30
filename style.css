@@ -49,12 +49,6 @@ section {
     padding: 50px 0;
 }
 
-main {
-    max-width: 1000px; /* Increased to match asset page width */
-    margin: 2rem auto;
-    padding: 0 1rem;
-}
-
 section {
     margin-bottom: 4rem;
 }
@@ -62,9 +56,10 @@ section {
 /* Integrated Gallery Grid System from drought_style.css adapted for light theme */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: (auto-fit, minmax(300px, 1fr));
     align-items: stretch;
+    margin: 0 auto; /* This centers the grid horizontally */
+    justify-content: center; /* Ensures content inside cells is centered if they don't fill the row */
 }
 
 .asset-card {
@@ -86,14 +81,6 @@ section {
     height: auto;
     border-radius: 4px;
     display: block;
-}
-
-/* Keep project_card as a wrapper if needed, but use the grid system */
-.project-card {
-    /* Keeping previous styles for internal padding/shadows but it will be inside the grid now */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(209, 209, 209, 0.1);
 }
 
 /* Add specific styling for images within project cards to ensure they are responsive */
